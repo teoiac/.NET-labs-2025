@@ -1,0 +1,14 @@
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\bin\Debug\net9.0\lab2-assignment.exe
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\bin\Debug\net9.0\lab2-assignment.deps.json
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\bin\Debug\net9.0\lab2-assignment.runtimeconfig.json
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\bin\Debug\net9.0\lab2-assignment.dll
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\bin\Debug\net9.0\lab2-assignment.pdb
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\obj\Debug\net9.0\lab2-assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\obj\Debug\net9.0\lab2-assignment.AssemblyInfoInputs.cache
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\obj\Debug\net9.0\lab2-assignment.AssemblyInfo.cs
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\obj\Debug\net9.0\lab2-assignment.csproj.CoreCompileInputs.cache
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\obj\Debug\net9.0\lab2-assignment.dll
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\obj\Debug\net9.0\refint\lab2-assignment.dll
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\obj\Debug\net9.0\lab2-assignment.pdb
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\obj\Debug\net9.0\lab2-assignment.genruntimeconfig.cache
+D:\AN_3\dot-net-labs\lab2-assignment\lab2-assignment\obj\Debug\net9.0\ref\lab2-assignment.dll
