@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tema-lab3", "tema-lab3\tema-lab3.csproj", "{9F77BC0E-C5CC-4DD5-9C8C-FCF9D1DC9CFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F77BC0E-C5CC-4DD5-9C8C-FCF9D1DC9CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F77BC0E-C5CC-4DD5-9C8C-FCF9D1DC9CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F77BC0E-C5CC-4DD5-9C8C-FCF9D1DC9CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F77BC0E-C5CC-4DD5-9C8C-FCF9D1DC9CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

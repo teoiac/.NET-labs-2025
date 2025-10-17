@@ -1,0 +1,6 @@
+@tema_lab3_HostAddress = http://localhost:5064
+
+GET {{tema_lab3_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
