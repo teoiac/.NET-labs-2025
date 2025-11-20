@@ -70,3 +70,10 @@ D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\obj\Debug\net9.0\refint
 D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\obj\Debug\net9.0\ProductManagement.pdb
 D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\obj\Debug\net9.0\ProductManagement.genruntimeconfig.cache
 D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\obj\Debug\net9.0\ref\ProductManagement.dll
+D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\bin\Debug\net9.0\AutoMapper.dll
+D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\AN_3\dot-net-labs\ProductManagement\ProductManagement\obj\Debug\net9.0\ProductManagement.sourcelink.json

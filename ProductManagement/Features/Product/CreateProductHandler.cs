@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
 using ProductManagement.Features.Product.Dto;
@@ -9,7 +10,8 @@ namespace ProductManagement.Features.Product;
 public class CreateProductHandler(
     ProductContext productContext,
     IDistributedCache cache,
-    ILogger<CreateProductHandler> logger)
+    ILogger<CreateProductHandler> logger,
+    IMapper mapper)
 {
     public async Task<IResult> Handle(CreateProductProfileRequest request)
     {
@@ -28,18 +30,7 @@ public class CreateProductHandler(
                 return Results.Conflict($"Product with SKU: {request.SKU} already exists");
             }
 
-            var product = new Product(
-                Guid.NewGuid(),
-                request.Name,
-                request.Brand,
-                request.SKU,
-                request.Category,
-                request.Price,
-                request.ReleaseDate,
-                request.ImageUrl,
-                request.IsAvailable,
-                request.StockQuantity
-            );
+            var product = mapper.Map<Product>(request);
 
             productContext.Products.Add(product);
             await productContext.SaveChangesAsync();
@@ -48,23 +39,7 @@ public class CreateProductHandler(
 
             logger.LogInformation("Product created successfully with ID: {ProductId}", product.Id);
 
-            var productDto = new ProductProfileDto(
-                product.Id,
-                product.Name,
-                product.Brand,
-                product.SKU,
-                product.Category.ToString(),
-                product.Price,
-                product.Price.ToString("C"),
-                product.ReleaseDate,
-                DateTime.UtcNow,
-                product.ImageUrl,
-                product.IsAvailable,
-                product.StockQuantity,
-                CalculateProductAge(product.ReleaseDate),
-                GetBrandInitials(product.Brand),
-                product.IsAvailable ? "In Stock" : "Out of Stock"
-            );
+            var productDto = mapper.Map<ProductProfileDto>(product);
 
             return Results.Created($"/products/{product.Id}", productDto);
         }
@@ -73,24 +48,5 @@ public class CreateProductHandler(
             logger.LogError(ex, "Error creating product with SKU: {SKU}", request.SKU);
             return Results.Problem("An error occurred while creating the product");
         }
-        
-    }
-    
-    private static string CalculateProductAge(DateTime releaseDate)
-    {
-        var age = DateTime.UtcNow - releaseDate;
-        return age.TotalDays switch
-        {
-            < 1 => "New",
-            < 30 => $"{(int)age.TotalDays} days old",
-            < 365 => $"{(int)(age.TotalDays / 30)} months old",
-            _ => $"{(int)(age.TotalDays / 365)} years old"
-        };
-    }
-    
-    private static string GetBrandInitials(string brand)
-    {
-        var words = brand.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        return string.Concat(words.Select(w => char.ToUpper(w[0])));
     }
 }
